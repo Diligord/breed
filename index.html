@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="images/favicon-64.png">
+        <script src="names.js"></script>
+        <script src="breed.js"></script>
+        <link rel="stylesheet" href="breed.css">
+        <title>Breed</title>
+    </head>
+    <body onload="reset()">
+      <div class="cont">
+        <div class="pageHeader">
+          <img src="images/seal.png">
+          <div><b>• BREED •</b></div>
+          <p>Click on two abominations to breed them!</p>
+        </div>
+        <div class='btn restart' onclick="reset()"><img src="images/Refresh-02.png"><span class="btn-tooltip">Restart the game</span></div>
+        <div class='btn clear' onclick="clearDead()"><img src="images/Trashcan-01.png"><span class="btn-tooltip">Remove all dead abominations</span></div>
+        <div class='twitter' id='twitter' onclick="window.open('https://twitter.com/intent/tweet?text=I%27ve+been+breeding+the+BEST+abomination+in+%23Breed.+<link>')">
+          <img src="images/twittericon.png"><p>Tweet about Breed on <b>Twitter!</b></p>
+        </div>
+
+        <div id="abominations">
+            <!-- Abominations will be added here by the renderAbominations function -->
+        </div>
+      </div>
+      <div id="message">
+        <!-- Message set in breed function-->
+        No messages
+      </div>
+    </body>
+</html>
